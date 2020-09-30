@@ -2,7 +2,7 @@
 Finite element software in C++. Using gmsh to generate mesh and output .VTK files.
 
 ## Compilation
-CMake version 3.10.2
+cmake version 3.18.3
 
 To compile this project, go to the Ellie folder and tap the following commands
 ```
