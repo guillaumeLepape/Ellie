@@ -1,7 +1,7 @@
 #ifndef __GAUSSPOINTSFACTORY_H__
 #define __GAUSSPOINTSFACTORY_H__
 
-#include <Eigen/Eigen>
+#include <Eigen/Core>
 
 //- Return the Gauss points matrix ( dimension x nbGaussPoints )
 

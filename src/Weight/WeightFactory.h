@@ -1,7 +1,7 @@
 #ifndef __WEIGHTFACTORY_H__
 #define __WEIGHTFACTORY_H__
 
-#include <Eigen/Eigen>
+#include <Eigen/Core>
 
 //- Return the quadrature weights depending on the dimension of the problem (2 or 3)
 //- and the order of the mesh (1 or 2)

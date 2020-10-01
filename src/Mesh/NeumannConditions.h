@@ -3,7 +3,7 @@
 
 #include <fstream>
 
-#include <Eigen/Eigen>
+#include <Eigen/Core>
 
 #include "PhysicalNames.h"
 #include "Element.h"

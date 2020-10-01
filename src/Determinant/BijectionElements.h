@@ -1,7 +1,7 @@
 #ifndef __BIJECTIONELEMENTS_H__
 #define __BIJECTIONELEMENTS_H__
 
-#include <Eigen/Eigen>
+#include <Eigen/Core>
 
 class BijectionElements
 {

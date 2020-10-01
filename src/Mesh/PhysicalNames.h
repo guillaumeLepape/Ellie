@@ -3,8 +3,10 @@
 
 #include <fstream>
 #include <iostream>
+#include <string>
+#include <vector>
 
-#include <Eigen/Eigen>
+#include <Eigen/Core>
 
 class PhysicalNames
 {

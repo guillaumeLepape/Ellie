@@ -1,6 +1,8 @@
 #ifndef __POLYNOM_H__
 #define __POLYNOM_H__
 
+#include <vector>
+
 #include "FirstDegreePolynom.h"
 
 //- Model product of polynom of degree 1 multiplied by a scalar lambda

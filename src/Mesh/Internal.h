@@ -1,7 +1,7 @@
 #ifndef INTERNAL_H
 #define INTERNAL_H
 
-#include <Eigen/Eigen>
+#include <Eigen/Core>
 
 #include "PhysicalNames.h"
 #include "Element.h"

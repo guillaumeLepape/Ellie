@@ -2,6 +2,7 @@
 
 #include <boost/algorithm/string.hpp>
 #include <iostream>
+#include <vector>
 
 FirstDegreePolynom::FirstDegreePolynom( const int& a, const int& b, const int& c, const int& d, const double& lambda )
     : m_coeff( {a, b, c, d} ), m_lambda( lambda )

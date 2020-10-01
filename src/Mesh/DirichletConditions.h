@@ -5,7 +5,7 @@
 #include <fstream>
 
 // Include Eigen library file
-#include <Eigen/Eigen>
+#include <Eigen/Core>
 
 // Include Utopia files
 #include "PhysicalNames.h"

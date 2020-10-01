@@ -3,8 +3,9 @@
 
 #include <fstream>
 #include <iostream>
+#include <vector>
 
-#include <Eigen/Eigen>
+#include <Eigen/Core>
 
 //- Read the elements from $Elements line to $EndElements line
 //- Then it contains all the boundary conditions indexes and the internal elements indexes

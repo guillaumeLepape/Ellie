@@ -1,7 +1,7 @@
 #ifndef __JACOBIANMATRIX_H__
 #define __JACOBIANMATRIX_H__
 
-#include <Eigen/Eigen>
+#include <Eigen/Core>
 
 class JacobianMatrix
 {

@@ -1,8 +1,9 @@
 #ifndef __FIRSTDEGREEPOLYNOM_H__
 #define __FIRSTDEGREEPOLYNOM_H__
 
-#include <Eigen/Eigen>
 #include <string>
+
+#include <Eigen/Core>
 
 //- Model a polynom of degree 1 in 2d or 3d
 //- In 2D : P = lambda( a + b x + c y )
