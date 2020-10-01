@@ -1,6 +1,12 @@
 # Ellie
 Finite element software in C++. Using gmsh to generate mesh and output .VTK files.
 
+## Clone the repository
+Since this git repository contains the submodule eigen, the clone command is the following
+```
+git clone --recurse-submodules <url>
+```
+
 ## Compilation
 cmake version 3.18.3
 

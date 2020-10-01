@@ -47,6 +47,9 @@ add_executable(run
     src/Mesh/PhysicalNames.cpp
     src/Mesh/PhysicalNames.h
 
+    src/Mesh/Partition.cpp
+    src/Mesh/Partition.h
+
     src/Polynom/FirstDegreePolynom.cpp
     src/Polynom/FirstDegreePolynom.h
 

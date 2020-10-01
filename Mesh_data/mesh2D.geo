@@ -19,5 +19,7 @@ Plane Surface(1) = {1};
 //+
 Physical Surface("interior") = {1};
 //+
-Physical Line("Dirichlet1") = {1, 2};
-Physical Line("Dirichlet2") = {3, 4};
+Physical Line("Dirichlet1") = {1};
+Physical Line("Neumann1") = {2};
+Physical Line("Dirichlet2") = {3};
+Physical Line("Neumann2") = {4};
