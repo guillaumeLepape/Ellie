@@ -6,17 +6,17 @@
 #include <string>
 #include <vector>
 
-#include "PhysicalNames.h"
-#include "Node.h"
+#include "../PhysicalNames/PhysicalNames.h"
+#include "../Node/Node.h"
 
-#include "Element.h"
+#include "../Element/Element.h"
 
-#include "Dimensions.h"
-#include "Internal.h"
-#include "DirichletConditions.h"
-#include "NeumannConditions.h"
+#include "../Dimensions/Dimensions.h"
+#include "../Internal/Internal.h"
+#include "../DirichletConditions/DirichletConditions.h"
+#include "../NeumannConditions/NeumannConditions.h"
 
-#include "Partition.h"
+#include "../Partition/Partition.h"
 
 class Mesh {
 

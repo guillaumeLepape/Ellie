@@ -8,8 +8,8 @@
 #include <Eigen/Core>
 
 // Include Utopia files
-#include "PhysicalNames.h"
-#include "Element.h"
+#include "../PhysicalNames/PhysicalNames.h"
+#include "../Element/Element.h"
 
 class DirichletConditions
 {

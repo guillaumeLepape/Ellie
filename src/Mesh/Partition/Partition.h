@@ -3,8 +3,8 @@
 
 #include <Eigen/Core>
 
-#include "Node.h"
-#include "DirichletConditions.h"
+#include "../Node/Node.h"
+#include "../DirichletConditions/DirichletConditions.h"
 
 class Partition
 {

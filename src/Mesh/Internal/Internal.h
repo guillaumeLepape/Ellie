@@ -3,10 +3,10 @@
 
 #include <Eigen/Core>
 
-#include "PhysicalNames.h"
-#include "Element.h"
-#include "Dimensions.h"
-#include "Node.h"
+#include "../PhysicalNames/PhysicalNames.h"
+#include "../Element/Element.h"
+#include "../Dimensions/Dimensions.h"
+#include "../Node/Node.h"
 
 class Internal
 {

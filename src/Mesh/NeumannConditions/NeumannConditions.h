@@ -5,8 +5,8 @@
 
 #include <Eigen/Core>
 
-#include "PhysicalNames.h"
-#include "Element.h"
+#include "../PhysicalNames/PhysicalNames.h"
+#include "../Element/Element.h"
 
 
 class NeumannConditions

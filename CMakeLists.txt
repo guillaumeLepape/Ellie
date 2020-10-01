@@ -23,32 +23,32 @@ add_executable(run
 
     src/GaussPoints/GaussPointsFactory.h
 
-    src/Mesh/Dimensions.cpp
-    src/Mesh/Dimensions.h
+    src/Mesh/Dimensions/Dimensions.cpp
+    src/Mesh/Dimensions/Dimensions.h
 
-    src/Mesh/DirichletConditions.cpp
-    src/Mesh/DirichletConditions.h
+    src/Mesh/DirichletConditions/DirichletConditions.cpp
+    src/Mesh/DirichletConditions/DirichletConditions.h
     
-    src/Mesh/Element.cpp
-    src/Mesh/Element.h
+    src/Mesh/Element/Element.cpp
+    src/Mesh/Element/Element.h
 
-    src/Mesh/Internal.cpp
-    src/Mesh/Internal.h
+    src/Mesh/Internal/Internal.cpp
+    src/Mesh/Internal/Internal.h
 
-    src/Mesh/Mesh.cpp
-    src/Mesh/Mesh.h
+    src/Mesh/Mesh/Mesh.cpp
+    src/Mesh/Mesh/Mesh.h
 
-    src/Mesh/NeumannConditions.cpp
-    src/Mesh/NeumannConditions.h
+    src/Mesh/NeumannConditions/NeumannConditions.cpp
+    src/Mesh/NeumannConditions/NeumannConditions.h
     
-    src/Mesh/Node.cpp
-    src/Mesh/Node.h
+    src/Mesh/Node/Node.cpp
+    src/Mesh/Node/Node.h
 
-    src/Mesh/PhysicalNames.cpp
-    src/Mesh/PhysicalNames.h
+    src/Mesh/PhysicalNames/PhysicalNames.cpp
+    src/Mesh/PhysicalNames/PhysicalNames.h
 
-    src/Mesh/Partition.cpp
-    src/Mesh/Partition.h
+    src/Mesh/Partition/Partition.cpp
+    src/Mesh/Partition/Partition.h
 
     src/Polynom/FirstDegreePolynom.cpp
     src/Polynom/FirstDegreePolynom.h
