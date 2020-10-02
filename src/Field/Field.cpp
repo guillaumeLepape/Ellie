@@ -1,6 +1,13 @@
 #include "Field.h"
 
 template<class Type>
+Field<Type>::Field( const Mesh& mesh, const std::string& nameField, const std::vector<Type>& value)
+    : mesh_( mesh ),  nameField_( nameField ), value_( value )
+{
+
+}
+
+template<class Type>
 Field<Type>::Field( const Mesh& mesh, const std::string& nameField, const Type& value )
     : mesh_( mesh ),  nameField_( nameField ), value_( mesh.nodes().nbNode(), value )
 {
