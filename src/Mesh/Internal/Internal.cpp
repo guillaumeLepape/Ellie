@@ -167,10 +167,10 @@ void Internal::computeDeterminant( const Dimensions& dimensions, const Node& nod
 
 std::ostream& operator<<( std::ostream& os, const Internal& internal )
 {
-    os << "--------------------------------------------------" << std::endl;
-    os << "Number of internal field elements : " << internal.nbInternalIndex() << std::endl;
+    os << "--------------------------------------------------\n";
+    os << "Number of internal field elements : " << internal.nbInternalIndex() << "\n";
     
-    os << "Internal " << std::endl;
+    os << "Internal " << "\n";
     
     for ( auto i = internal.indexInternalField().cbegin(); i != internal.indexInternalField().cend(); i++ )
     {
@@ -178,6 +178,6 @@ std::ostream& operator<<( std::ostream& os, const Internal& internal )
         {
             os << *j << " ";
         }
-        os << std::endl;
+        os << "\n";
     }
 }

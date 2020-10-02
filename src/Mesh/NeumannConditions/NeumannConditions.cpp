@@ -35,22 +35,22 @@ void NeumannConditions::affect_NeumannConditions( const PhysicalNames& physicalN
 
 std::ostream& operator<<( std::ostream& os, const NeumannConditions& neumannConditions )
 {
-    os << "--------------------------------------------------" << std::endl;
-    os << "Number of Neumann conditions : " << neumannConditions.nbNeumann_ << std::endl;
+    os << "--------------------------------------------------\n";
+    os << "Number of Neumann conditions : " << neumannConditions.nbNeumann_ << "\n";
     
     // Const reference to indexNeumannConditions to alleviate the syntax
     const std::vector<std::vector<std::vector<int>>> indexNeumannConditions = neumannConditions.indexNeumannConditions_;
 
     for ( auto i = indexNeumannConditions.cbegin(); i != indexNeumannConditions.cend(); ++i )
     {
-        os << "Neumann conditions : " << std::distance( indexNeumannConditions.cbegin(), i + 1) << std::endl;
+        os << "Neumann conditions : " << std::distance( indexNeumannConditions.cbegin(), i + 1) << "\n";
         for ( auto j = i->cbegin(); j != i->cend(); ++j )
         {
             for ( auto k = j->cbegin(); k != j->cend(); ++k )
             {
                 os << *k << " ";
             }
-            os << std::endl;            
+            os << "\n";            
         }
        
     }

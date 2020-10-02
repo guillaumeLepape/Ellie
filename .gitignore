@@ -39,3 +39,6 @@ build
 
 # Don't export the vscode parameter
 .vscode
+
+# Don't export results .inp file
+*.inp

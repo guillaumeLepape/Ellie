@@ -41,6 +41,8 @@ public:
 
     inline const Node& nodes() const { return nodes_; } 
 
+    inline const Dimensions& dimensions() const { return dimensions_; }
+
     inline const DirichletConditions& dirichletConditions() const { return dirichletConditions_; }
     inline const NeumannConditions& neumannConditions() const { return neumannConditions_; }
     inline const Internal& internal() const { return internal_; }

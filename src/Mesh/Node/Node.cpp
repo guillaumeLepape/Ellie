@@ -21,8 +21,8 @@ void Node::Read_nodes(std::ifstream& mesh_file)
 
 std::ostream& operator<<( std::ostream& os, const Node& node )
 {
-    os << "--------------------------------------------------" << std::endl;
-    os << "Number of nodes : " << node.nbNode() << std::endl;
-    os << "Nodes : " << std::endl;
-    os << node.valueNodes_ << std::endl;
+    os << "--------------------------------------------------" << "\n";
+    os << "Number of nodes : " << node.nbNode() << "\n";
+    os << "Nodes : " << "\n";
+    os << node.valueNodes_ << "\n";
 }

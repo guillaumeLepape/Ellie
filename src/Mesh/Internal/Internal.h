@@ -32,7 +32,11 @@ class Internal
 
         inline const std::vector<std::vector<int>>& indexInternalField() const { return indexInternalField_; }
         inline const int& nbInternalIndex() const { return nbInternalIndex_; }
+
         inline const std::vector<double>& internalArea() const { return internalArea_; }
+        inline const std::vector<double>& determinant() const { return determinant_; }
+        inline const std::vector<double>& invertDeterminant() const { return invertDeterminant_; }
+
 
         friend std::ostream& operator<<( std::ostream& os, const Internal& internal );
 };

@@ -45,19 +45,19 @@ void DirichletConditions::affectDirichletConditions( const PhysicalNames& physic
 
 std::ostream& operator<<( std::ostream& os, const DirichletConditions& dirichletConditions )
 {
-    os << "--------------------------------------------------" << std::endl;
-    os << "Number of Dirichlet conditions : " << dirichletConditions.nbDirichlet_ << std::endl;
+    os << "--------------------------------------------------\n";
+    os << "Number of Dirichlet conditions : " << dirichletConditions.nbDirichlet_ << "\n";
 
     // Const reference to indexDirichletConditions to alleviate the syntax
     const std::vector<std::vector<int>>& indexDirichletConditions = dirichletConditions.indexDirichletConditions_;
 
     for ( auto i = indexDirichletConditions.cbegin(); i != indexDirichletConditions.cend(); ++i )
     {
-        os << "Dirichlet conditions : " << std::distance( indexDirichletConditions.cbegin(), i + 1) << std::endl;
+        os << "Dirichlet conditions : " << std::distance( indexDirichletConditions.cbegin(), i + 1) << "\n";
         for ( auto j = i->cbegin(); j != i->cend(); ++j )
         {
             os << *j << " ";
         }
-        os << std::endl;
+        os << "\n";
     }
 }

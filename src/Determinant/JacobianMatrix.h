@@ -15,11 +15,11 @@ class JacobianMatrix
                 const double& x1 = coord(0,0);
                 const double& y1 = coord(1,0);
 
-                const double& x2 = coord(1,0);
+                const double& x2 = coord(0,1);
                 const double& y2 = coord(1,1);
 
-                const double& x3 = coord(2,0);
-                const double& y3 = coord(2,1);
+                const double& x3 = coord(0,2);
+                const double& y3 = coord(1,2);
 
                 Eigen::Matrix2d jacobianMatrix;
 
@@ -33,17 +33,20 @@ class JacobianMatrix
             if ( dimension == 3 )
             {
                 const double& x1 = coord(0,0);
-                const double& x2 = coord(1,0);
-                const double& x3 = coord(2,0);
-                const double& x4 = coord(3,0);
-                const double& y1 = coord(0,1);
+                const double& y1 = coord(1,0);
+                const double& z1 = coord(2,0);
+
+                const double& x2 = coord(0,1);
                 const double& y2 = coord(1,1);
-                const double& y3 = coord(2,1);
-                const double& y4 = coord(3,1);
-                const double& z1 = coord(0,2);
-                const double& z2 = coord(1,2);
+                const double& z2 = coord(2,1);
+
+                const double& x3 = coord(0,2);
+                const double& y3 = coord(1,2);
                 const double& z3 = coord(2,2);
-                const double& z4 = coord(3,2);
+
+                const double& x4 = coord(0,3);
+                const double& y4 = coord(1,3);
+                const double& z4 = coord(2,3);
 
                 double a,b,c,d,e,f,g,h,i;
 

@@ -22,20 +22,20 @@ class EvaluationPolynom
             Eigen::MatrixXd gaussPoints = GaussPointsFactory::NewGaussPoints( dimension, orderMesh );
 
             // Size of result is nb_polynom_tri x nbGaussPoints
-            Eigen::MatrixXd result( polynom.size(), gaussPoints.cols() );
+            Eigen::MatrixXd result(gaussPoints.cols(), polynom.size());
 
             for ( int i = 0; i < result.rows(); i++ )
             {
                 for ( int j = 0; j < result.cols(); j++ )
                 {
-                    result(i,j) = polynom[ i ]( gaussPoints.col(j) );
+                    result(i,j) = polynom[j]( gaussPoints.col(i) );
                 }
             }
 
             return result;
         }
 
-        static Eigen::MatrixXd NewDerivateReferencePolynom
+        static std::vector<Eigen::MatrixXd> NewDerivateReferencePolynom
         (
             const int& dimension,
             const int& orderMesh
@@ -46,15 +46,16 @@ class EvaluationPolynom
             Eigen::MatrixXd gaussPoints = GaussPointsFactory::NewGaussPoints( dimension, orderMesh );
 
             // Size of the result is nb_polynom_tri x ( dimension*nbGaussPoints )
-            Eigen::MatrixXd result( derivatePolynom.size(), dimension*gaussPoints.cols() );
+            std::vector<Eigen::MatrixXd> result( derivatePolynom.size(), Eigen::MatrixXd(dimension, gaussPoints.cols() ) );
+            // Eigen::MatrixXd result( dimension,  derivatePolynom.size()*gaussPoints.cols() );
 
-            for ( int i = 0; i < result.rows(); i++ )
+            for ( int i = 0; i < result.size(); i++ )
             {
-                for ( int j = 0; j < dimension; j++ )
+                for ( int j = 0; j < result[i].rows(); j++ )
                 {
-                    for ( int k = 0; k < gaussPoints.cols(); k++)
+                    for ( int k = 0; k < result[i].cols(); k++)
                     {
-                        result(i,dimension*k+j) = derivatePolynom[i]( j, gaussPoints.col(k) );
+                        result[i](j, k) = derivatePolynom[i]( j, gaussPoints.col(k) );
                     } 
                 }
             }

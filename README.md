@@ -1,5 +1,5 @@
 # Ellie
-Finite element software in C++. Using gmsh to generate mesh and output .VTK files.
+Finite element software in C++. Using gmsh to generate mesh and output .inp files (readable file for ParaView ).
 
 ## Clone the repository
 Since this git repository contains the submodule eigen, the clone command is the following

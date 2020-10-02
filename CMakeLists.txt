@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.10.2)
+cmake_minimum_required(VERSION 3.18.3)
 
 # set the project name
 project(Utopia VERSION 1.0.0)
@@ -57,6 +57,13 @@ add_executable(run
     src/Polynom/Polynom.h
     
     src/Weight/WeightFactory.h
+
+    src/Laplacian/Laplacian.cpp
+    src/Laplacian/Laplacian.h
+
+    # src/Matrix/FEMatrix.h
+    src/Field/Field.cpp        
+    src/Field/Field.h
 )
 
 find_package (Eigen3 3.3 REQUIRED NO_MODULE)
